@@ -1,14 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+    <title>Fronend Dev course</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
 
-  <body>
-    <h1>Hello,world Thon</h1>
-    <h2>Your mentor did some changes! =)</h2>
-  </body>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo.svg" alt="23andfour logo" class="logo">
+
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                <img src="images/ham.svg" alt="toggle menu" class="menu id="menu"> </a>
+                <ul class="show-desktop  hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop "><img src="images/exit.svg " alt="Exit menu "></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <img src="images/server.svg" alt="server graphic" class="server">
+            <h1>
+                Web hosting for the modern Era</h1>
+            <p class="subhead">Go serverless and pay only for what you use.</p>
+            <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/icon-1.svg" alt="calendar icon">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                </li>
+                <li>
+                    <img src="images/icon-2.svg" alt="Phone icon">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                </li>
+                <li>
+                    <img src="images/icon-3.svg" alt="Phone icon">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/user1.png" class="Girl Picture">
+                        <blockquote>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore
+                            <figcaption>- Jane Doe</figcaption>
+                        </blockquote>
+
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/user2.png" class="boy Picture">
+                        <blockquote>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore
+                            <figcaption>- Jane Doe</figcaption>
+                        </blockquote>
+
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Start your free trail now!</h2>
+        <a href="#" class="cta">Get Started</a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="images/logo-white.svg" class="logo" alt="logo">
+                </a>
+                <p class="address">Melrose Place, 90210<br>USA</p>
+                <ul class="footer-links">
+                    <li><a href="#">Term services</a></li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+                <a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var menu = document.getElementbyId("menu");
+        var nav = document.getElementbyId("nav");
+        var exit = document.getElementbyId("exit");
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+        });
+    </script>
+</body>
+
 </html>
