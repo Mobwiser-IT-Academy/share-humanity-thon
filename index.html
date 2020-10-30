@@ -105,8 +105,15 @@
         var menu = document.getElementbyId("menu");
         var nav = document.getElementbyId("nav");
         var exit = document.getElementbyId("exit");
+
         menu.addEventListener('click', function(e) {
             nav.classList.toggle('hide-mobile');
+            e.prevenDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.('hide-mobile');
+            e.prevenDefault();
         });
     </script>
 </body>
