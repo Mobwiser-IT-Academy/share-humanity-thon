@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask_mode</title>
+    <style>
+        .masked {
+            width: 100px;
+            height: 100px;
+            background-color: #8cffa0;
+            margin: 20px;
+            border: 20px solid #8ca0ff;
+            padding: 20px;
+            -webkit-mask-image: url(images/2021.jpg);
+            -webkit-mask-size: 100% 100%;
+            -webkit-mask-clip: border-box;
+            mask-image: url(images/exit.svg);
+            mask-size: 100% 100%;
+            mask-clip: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="masked"></div>
+
+</body>
+
+</html>

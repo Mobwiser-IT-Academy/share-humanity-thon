@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            box-sizing: content-box;
+        }
+        
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            font-size: 29px;
+            text-align: center;
+            font-family: khmer os muol light, Times New Roman, Times, serif;
+        }
+        
+        .flex-item-left {
+            background-color: #b1b1b1;
+            padding: 10px;
+            flex: 50%;
+            border-radius: 10px;
+        }
+        
+        .flex-item-right {
+            background-color: dodgerblue;
+            padding: 10px;
+            flex: 50%;
+            border-radius: 10px;
+        }
+        
+        @media(max-width: 500px) {
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item-left">កាលពីព្រេងនាយខ្ញុំបានស្រលាញ់ស្រីម្នាក់</div>
+        <div class="flex-item-right">អ្វីដែលមិនយល់នោះគឺគេស្រលាញ់ខ្ញុំតែគេមិនបង្ហាញបន្ងិចសោះ</div>
+        <div class="flex-item-left">Love you more then I can say</div>
+    </div>
+
+</body>
+
+</html>
