@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays2</title>
+    <script type="text/javascript">
+        var students = new Array("Jonh", "Ann", "Aaron", "Edwin", "Elizabeth", "A Thon");
+        Array.prototype.displayItems = function() {
+            for (i = 0; i < this.length; i++) {
+                document.write(this[i] + "<br/>");
+            }
+        }
+        document.write("Students array such as: <br/>");
+        students.displayItems();
+        document.write("The number of items of  students array = " + students.length + "<br/>");
+        document.write("<br/>The SORTED student array<br/>");
+        students.sort();
+        students.displayItems();
+        document.write("<br/>The REVERSED stuents array<br/>");
+        students.reverse();
+        students.displayItems();
+        document.write("<br/>THE student array after REMOVING the LAST item<br>");
+        students.pop();
+        students.displayItems();
+        document.write("<br/>THE students array after PUSH<br/>");
+        students.push("អូនភ័ស");
+        students.displayItems();
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

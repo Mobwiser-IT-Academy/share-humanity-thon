@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array3</title>
+    <script type="text/javascript">
+        var students = new Array("Thon", "Thim", "March", "Neth", "Mao", "Edwin");
+        Array.prototype.displayItems = function() {
+            for (i = 0; i < this.length; i++) {
+                document.write(this[i] + "<br/>");
+            }
+        }
+        document.write("Students array<br/>");
+        students.displayItems();
+        document.write("The Number of items in the student array = " + students.length + "<br/>");
+        document.write("<br/>The sort student array:<br/>");
+        students.sort();
+        students.displayItems();
+        document.write("<br/>The REVERSED student array<br/>");
+        students.reverse();
+        students.displayItems();
+        document.write("<br/>Student array after the remove the last item<br/>");
+        students.pop();
+        students.displayItems();
+        document.write("<br/>The student array PUSH:<br/>");
+        students.push("New stuff");
+        students.displayItems();
+        document.write("Remove the first item:<br/>");
+        students.shift();
+        students.displayItems();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

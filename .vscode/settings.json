@@ -1,0 +1,7 @@
+{
+    "html-css-class-completion.enableEmmetSupport": true,
+    "autoscroll.autoScrollAllOpenedFiles": true,
+    "git.autofetch": true,
+    "extensions.showRecommendationsOnlyOnDemand": true,
+    "typescript.disableAutomaticTypeAcquisition": true
+}

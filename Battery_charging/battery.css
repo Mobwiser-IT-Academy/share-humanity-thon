@@ -1,0 +1,100 @@
+body {
+    background-color: aqua;
+}
+
+.battery {
+    height: 140px;
+    width: 325px;
+    border: 6px solid #000;
+    border-radius: 8px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.top {
+    height: 50px;
+    width: 15px;
+    background-color: #000;
+    position: relative;
+    left: 448px;
+    top: 275px;
+    border-radius: 0 5px 5px 0;
+}
+
+.charge1,
+.charge2,
+.charge3,
+.charge4 {
+    width: 75px;
+    height: 130px;
+    background-color: crimson;
+    position: relative;
+    opacity: 0;
+}
+
+.charge1 {
+    bottom: 1px;
+    left: 70px;
+    animation: charge-1 3s infinite;
+}
+
+@keyframes charge-1 {
+    25%,
+    100% {
+        opacity: 1;
+    }
+}
+
+.charge2 {
+    bottom: 0px;
+    left: 190px;
+    animation: charge-2 3s infinite;
+}
+
+@keyframes charge-2 {
+    0%,
+    25% {
+        opacity: 0;
+    }
+    50%,
+    100% {
+        opacity: 1;
+    }
+}
+
+.charge3 {
+    bottom: 75px;
+    left: 270px;
+    animation: charge-3 3s infinite;
+}
+
+@keyframes charge-3 {
+    0%,
+    50% {
+        opacity: 0;
+    }
+    75%,
+    100% {
+        opacity: 1;
+    }
+}
+
+.charge4 {
+    bottom: 205px;
+    left: 350px;
+    animation: charge-4 3s infinite;
+}
+
+@keyframes charge-4 {
+    0%,
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
